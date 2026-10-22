@@ -1,0 +1,62 @@
+// font family Inter
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+// color
+:root {
+  --primary-color: #0e36b9;
+  --secondary-color: #7e7e7e;
+  --light-color: #ffffff;
+  --dark-color: #000000;
+  --lightdark-color: #181818;
+  font-size: 16px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+}
+
+.navbar-toggler,
+.btn-close {
+  &:focus {
+    box-shadow: none;
+    outline: 0;
+    border: 0;
+  }
+}
+
+p {
+  color: var(--secondary-color);
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+.btn-primary,
+.btn-outline-primary {
+  font-size: 0.8rem !important;
+  padding: 8px 16px;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  color: var(--light-color);
+  &:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+}
+
+.btn-outline-primary {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  background-color: transparent;
+  &:hover {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border-color: var(--primary-color);
+  }
+}
