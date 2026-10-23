@@ -1,0 +1,293 @@
+@use "../abstracts" as *;
+
+.highlight {
+  display: inline-block;
+  padding-bottom: 0.1em;
+  color: var(--primary-color);
+  background-image: linear-gradient(
+    90deg,
+    blue 0%,
+    var(--primary-color) 50%,
+    #5b8cff 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 24px 60px;
+  background-color: var(--light-color);
+
+  @include up(lg) {
+    padding: 36px 24px 100px;
+  }
+
+  h1 {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: var(--dark-color);
+  }
+
+  img {
+    width: 175%;
+    position: relative;
+    left: -40%;
+
+    @include up(sm) {
+      width: 125%;
+      left: -10%;
+    }
+    @include up(lg) {
+      width: 80%;
+      position: static;
+    }
+  }
+
+  p {
+    font-size: clamp(1.25rem, 2vw, 1.75rem);
+    font-weight: 500;
+    margin: 28px auto 0;
+    line-height: 1.5;
+
+    @include up(md) {
+      width: 80%;
+    }
+  }
+}
+
+// vision mission
+
+.vision {
+  padding: 100px 24px;
+
+  .vision-intro {
+    h1 {
+      font-size: clamp(2.2rem, 2vw, 3.75rem);
+    }
+
+    p {
+      font-size: clamp(1.1rem, 1.5vw, 1.6rem);
+      font-weight: 500;
+      line-height: 1.6;
+    }
+  }
+
+  .vision-mission {
+    .mission-slide {
+      perspective: 1200px;
+    }
+
+    .mission-card {
+      position: relative;
+      height: 380px;
+      transform-style: preserve-3d;
+      transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
+
+      &.is-flipped {
+        transform: rotateY(180deg);
+      }
+
+      @include up(md) {
+        height: 400px;
+      }
+    }
+
+    .mission-face {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      border-radius: 24px;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+    }
+
+    .mission-front {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 24px;
+      color: var(--light-color);
+      background-color: $navy;
+      background-image:
+        linear-gradient(
+          to top,
+          rgba($navy, 0.9) 0%,
+          rgba($navy, 0.45) 55%,
+          rgba($navy, 0.6) 100%
+        ),
+        var(--mission-img, linear-gradient(160deg, $navy 30%, #16307f 100%));
+      background-size: cover;
+      background-position: center;
+    }
+
+    .mission-num {
+      position: absolute;
+      top: 22px;
+      left: 24px;
+      font-size: 0.9rem;
+      letter-spacing: 0.14em;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .mission-icon {
+      position: absolute;
+      top: 18px;
+      right: 24px;
+      font-size: 2rem;
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .mission-summary {
+      padding-right: 56px;
+
+      h3 {
+        margin: 0 0 6px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--light-color);
+      }
+
+      p {
+        margin: 0;
+        color: rgba(255, 255, 255, 0.75);
+      }
+    }
+
+    .mission-toggle {
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+      display: grid;
+      place-items: center;
+      width: 40px;
+      height: 40px;
+      border: 0;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.16);
+      color: var(--light-color);
+      font-size: 1.3rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.28);
+      }
+    }
+
+    .mission-back {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 28px 24px;
+      overflow-y: auto;
+      background-color: var(--dark-color);
+      color: var(--light-color);
+      transform: rotateY(180deg);
+
+      h3 {
+        margin: 0 0 10px;
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: var(--light-color);
+      }
+
+      p {
+        margin: 0;
+        font-size: 0.95rem;
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      .mission-toggle {
+        top: 16px;
+        right: 16px;
+        bottom: auto;
+      }
+    }
+
+    .mission-controls {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      padding-top: 24px;
+
+      button {
+        display: grid;
+        place-items: center;
+        width: 44px;
+        height: 44px;
+        border: 0;
+        border-radius: 50%;
+        background-color: $navy;
+        color: var(--light-color);
+        font-size: 1.25rem;
+        cursor: pointer;
+        transition: opacity 0.2s ease;
+
+        &:hover {
+          opacity: 0.85;
+        }
+      }
+    }
+
+    @include up(lg) {
+      .mission-slide {
+        perspective: none;
+      }
+
+      .mission-card,
+      .mission-card.is-flipped {
+        height: auto;
+        transform: none;
+        transform-style: flat;
+      }
+
+      .mission-face {
+        position: static;
+        overflow: visible;
+        backface-visibility: visible;
+        -webkit-backface-visibility: visible;
+      }
+
+      .mission-front {
+        aspect-ratio: 4 / 3;
+        overflow: hidden;
+      }
+
+      .mission-summary,
+      .mission-front .mission-toggle,
+      .mission-back .mission-toggle {
+        display: none;
+      }
+
+      .mission-back {
+        justify-content: flex-start;
+        padding: 20px 4px 0;
+        background-color: transparent;
+        transform: none;
+
+        h3 {
+          color: var(--dark-color);
+        }
+
+        p {
+          color: var(--secondary-color);
+        }
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .mission-card {
+        transition-duration: 0.01s;
+      }
+    }
+  }
+}
