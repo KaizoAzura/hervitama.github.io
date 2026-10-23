@@ -1,0 +1,35 @@
+.navbar-toggler,
+.btn-close {
+  &:focus {
+    box-shadow: none;
+    outline: 0;
+    border: 0;
+  }
+}
+
+.btn-primary,
+.btn-outline-primary {
+  font-size: 0.8rem !important;
+  padding: 8px 16px;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  color: var(--light-color);
+  &:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+}
+
+.btn-outline-primary {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  background-color: transparent;
+  &:hover {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border-color: var(--primary-color);
+  }
+}

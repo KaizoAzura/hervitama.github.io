@@ -1,6 +1,5 @@
-@use "../base/root";
+@use "../abstracts" as *;
 
-// backdrop blur untuk mega menu (desktop saja)
 .mega-menu-backdrop {
   position: fixed;
   inset: 0;
@@ -111,9 +110,7 @@
   }
 }
 
-// responsive
-
-@media screen and (min-width: 992px) {
+@include up(lg) {
   .navbar {
     .offcanvas {
       margin: 0;
@@ -201,7 +198,6 @@
     }
   }
 
-  // navbar kembali solid saat mega menu terbuka
   .navbar:has(.nav-item.dropdown:hover)::before,
   .navbar:has(.nav-item.dropdown.is-open)::before,
   .navbar:has(.nav-item.dropdown :focus-visible)::before {

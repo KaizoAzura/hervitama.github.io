@@ -1,0 +1,108 @@
+@use "../abstracts" as *;
+
+.footer {
+  padding-top: 32px;
+  background-color: var(--light-color);
+  color: var(--secondary-color);
+  font-size: 0.8rem;
+
+  .footer-brand {
+    padding-bottom: 24px;
+
+    p {
+      max-width: 32ch;
+    }
+  }
+
+  .footer-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 14px 0;
+    border: 0;
+    border-top: 1px solid rgba($charcoal, 0.15);
+    background: none;
+    color: var(--dark-color);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: left;
+
+    i {
+      font-size: 1.2rem;
+      transition: transform 0.25s ease;
+    }
+
+    &[aria-expanded="true"] i {
+      transform: rotate(45deg);
+    }
+  }
+
+  .footer-list {
+    margin: 0;
+    padding: 0 0 14px;
+    list-style: none;
+
+    li {
+      padding: 6px 0;
+    }
+
+    a {
+      color: var(--secondary-color);
+
+      &:hover {
+        color: var(--dark-color);
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px 0 24px;
+    border-top: 1px solid rgba($charcoal, 0.15);
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .footer-certs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    img {
+      width: auto;
+      height: 32px;
+    }
+  }
+
+  @include up(lg) {
+    padding-top: 56px;
+
+    .footer-toggle {
+      padding: 0 0 12px;
+      border-top: 0;
+      cursor: default;
+      pointer-events: none;
+
+      i {
+        display: none;
+      }
+    }
+
+    .footer-list {
+      padding-bottom: 0;
+    }
+
+    .footer-bottom {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+  }
+}

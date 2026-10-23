@@ -1,0 +1,28 @@
+@use "sass:map";
+@use "variables" as *;
+
+@mixin up($key) {
+  @media screen and (min-width: #{map.get($breakpoints, $key)}) {
+    @content;
+  }
+}
+
+@mixin down($key) {
+  @media screen and (max-width: #{map.get($breakpoints, $key) - 0.02px}) {
+    @content;
+  }
+}
+
+@mixin tile-theme($bg, $heading, $text, $img: null, $overlay: null) {
+  --tile-bg: #{$bg};
+  --tile-heading: #{$heading};
+  --tile-text: #{$text};
+
+  @if $img {
+    --tile-img: #{$img};
+  }
+
+  @if $overlay {
+    --tile-overlay: #{$overlay};
+  }
+}
