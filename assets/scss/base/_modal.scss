@@ -1,0 +1,78 @@
+@use "../abstracts" as *;
+
+.modal {
+  --modal-top-gap: 30px;
+
+  .modal-dialog {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: none;
+    min-height: calc(100% - var(--modal-top-gap));
+    margin: var(--modal-top-gap) auto 0;
+  }
+
+  .modal-content {
+    flex: 1 1 auto;
+    border: 0;
+    border-radius: 24px 24px 0 0;
+    padding: 32px;
+
+    .modal-header {
+      border: 0;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      margin: 0;
+      padding: 0;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.75);
+      background-size: 14px;
+      color: white !important;
+      opacity: 1;
+      transition: background-color 0.2s ease;
+      font-size: 20px;
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    .modal-body {
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--secondary-color);
+      line-height: 1.5em;
+    }
+  }
+
+  &.fade .modal-dialog {
+    transform: translateY(100%);
+  }
+
+  &.show .modal-dialog {
+    transform: none;
+  }
+
+  @include up(sm) {
+    .modal-dialog {
+      width: 90%;
+    }
+  }
+
+  @include up(md) {
+    .modal-dialog {
+      width: 80%;
+    }
+  }
+
+  @include up(lg) {
+    .modal-dialog {
+      width: 60%;
+    }
+  }
+}
