@@ -127,23 +127,66 @@
 
     <!-- end navbar -->
     <!-- hero section -->
-    <main class="hero container-fluid py-4 py-lg-5">
+    <main class="hero container-fluid">
       <div class="container">
-        <h1 class="text-center">
-          Precision Engineering for Industrial Excellence.
-        </h1>
-        <p class="text-center">
-          Engineering, instrumentation, and calibration solutions for accurate,
-          efficient operations.
-        </p>
-        <div class="d-flex justify-content-center gap-3">
-          <a href="#!" class="btn btn-primary rounded-pill">Explore Service</a>
-          <a href="#!" class="btn btn-outline-primary rounded-pill">See more</a>
-        </div>
-        <div class="img-group">
-          <img src="assets/image/Calibration_Flow.jpg" alt="" />
-          <img src="assets/image/lab6.jpg" alt="" />
-          <img src="assets/image/Lab_21.jpg" alt="" />
+        <div class="row align-items-center g-4 gx-lg-5">
+          <div class="col-md-6 hero-copy text-center text-sm-start">
+            <h1
+              aria-label="Your partner in calibration, instrumentation, and engineering"
+            >
+              <span aria-hidden="true">Your partner in</span>
+              <span class="hero-word-line" aria-hidden="true">
+                <span
+                  class="hero-word"
+                  data-words="Calibration,Instrumentation,Engineering"
+                  >Calibration</span
+                ><span class="hero-caret"></span>
+              </span>
+            </h1>
+            <p>
+              PT Hervitama Indonesia supports accurate, efficient industrial
+              operations, backed by 20+ years of experience.
+            </p>
+            <div
+              class="d-flex justify-content-center justify-content-sm-start gap-3"
+            >
+              <a href="services.html" class="btn btn-primary rounded-pill"
+                >Explore Service</a
+              >
+              <a href="about.html" class="btn btn-outline-primary rounded-pill"
+                >See more</a
+              >
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="hero-visual">
+              <div class="hero-set is-active">
+                <img
+                  src="assets/image/lab6.jpg"
+                  style="object-position: 70% center"
+                  alt=""
+                />
+                <img
+                  src="assets/image/Lab_21.jpg"
+                  style="object-position: 75% center"
+                  alt=""
+                />
+              </div>
+              <div class="hero-set">
+                <img
+                  src="assets/image/Calibration_Flow.jpg"
+                  style="object-position: 30% center"
+                  alt=""
+                />
+                <img src="assets/image/bg-experience-1.jpg" alt="" />
+              </div>
+              <div class="hero-set">
+                <img src="assets/image/bg-experience-3.jpg" alt="" />
+                <img src="assets/image/bg-experience-4.jpg" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
@@ -171,7 +214,7 @@
           >
             <h2>Solutions for Industrial Needs.</h2>
             <p>From engineering to calibration</p>
-            <a href="#!" class="btn btn-primary rounded rounded-pill"
+            <a href="services.html" class="btn btn-primary rounded rounded-pill"
               >See More</a
             >
           </div>
@@ -418,7 +461,6 @@
             </button>
             <div class="collapse d-lg-block" id="footerServices">
               <ul class="footer-list">
-                <li><a href="#">Engineering Solutions</a></li>
                 <li><a href="#">Electrical &amp; Instrumentation</a></li>
                 <li><a href="#">Calibration Services</a></li>
                 <li><a href="#">Tera Metrology</a></li>
@@ -472,5 +514,6 @@
     ></script>
     <!-- vanilla js -->
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/hero.js"></script>
   </body>
 </html>

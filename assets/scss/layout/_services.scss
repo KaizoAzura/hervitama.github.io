@@ -1,0 +1,58 @@
+@use "../abstracts" as *;
+
+.services-hero {
+  padding: 24px 24px 100px;
+  min-height: 100vh;
+  background-color: var(--light-color);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .services-img {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin: 32px auto 20px;
+  }
+
+  p {
+    font-size: 20px;
+    font-weight: 400;
+    color: $charcoal;
+  }
+
+  .service {
+    img {
+      width: 50px;
+      margin-bottom: 28px;
+    }
+  }
+
+  @include up(sm) {
+    .services-img {
+      width: 70%;
+    }
+  }
+
+  @include up(md) {
+    .services-img {
+      width: 50%;
+    }
+
+    h1 {
+      margin: 24px auto 20px;
+      font-size: 60px;
+    }
+    p {
+      font-size: 24px;
+    }
+  }
+
+  @include up(lg) {
+    .services-img {
+      width: 30%;
+    }
+  }
+}
