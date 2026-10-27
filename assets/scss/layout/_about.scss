@@ -24,6 +24,32 @@
   align-items: center;
   padding: 40px 24px 60px;
   background-color: var(--light-color);
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0.5) 5%,
+      rgba(255, 255, 255, 0) 12%
+    ),
+    linear-gradient(
+      to top,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0.8) 5%,
+      rgba(255, 255, 255, 0.4) 10%,
+      rgba(255, 255, 255, 0) 16%
+    ),
+    radial-gradient(
+      ellipse 55% 60% at 88% 30%,
+      rgba(14, 54, 185, 0.16),
+      rgba(14, 54, 185, 0.07) 45%,
+      rgba(14, 54, 185, 0) 72%
+    ),
+    radial-gradient(
+      ellipse 50% 55% at 8% 88%,
+      rgba(91, 140, 255, 0.18),
+      rgba(91, 140, 255, 0.07) 45%,
+      rgba(91, 140, 255, 0) 72%
+    );
 
   @include up(lg) {
     padding: 36px 24px 100px;
@@ -47,7 +73,7 @@
       left: -10%;
     }
     @include up(lg) {
-      width: 80%;
+      width: 70%;
       position: static;
     }
   }

@@ -1,7 +1,7 @@
 @use "../abstracts" as *;
 
 .services-hero {
-  padding: 24px 24px 100px;
+  padding: 24px 24px 40px;
   min-height: 100vh;
   background-color: var(--light-color);
   display: flex;
@@ -24,9 +24,24 @@
   }
 
   .service {
-    img {
-      width: 50px;
-      margin-bottom: 28px;
+    i {
+      color: var(--primary-color);
+      font-size: 64px;
+    }
+
+    h3 {
+      font-size: 20px;
+      font-size: 600;
+      line-height: 1.5em;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.75em;
+    }
+
+    a {
+      text-decoration: none;
     }
   }
 
