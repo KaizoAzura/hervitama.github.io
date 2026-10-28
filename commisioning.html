@@ -131,10 +131,23 @@
     <main>
       <!-- hero section -->
       <section class="comm-hero container-fluid">
+        <!-- nav service -->
         <div class="nav-service">
+          <button
+            type="button"
+            class="nav-service-btn nav-service-prev"
+            aria-label="Scroll left"
+          >
+            <i class="ri-arrow-left-s-line"></i>
+          </button>
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a href="#!" class="nav-link"
+              <a
+                href="#!"
+                class="nav-link"
+                data-bs-toggle="modal"
+                data-bs-target="#modalFlowmeter"
+                aria-label="Read more about Flowmeter"
                 ><img src="assets/image/flowmeter.png" alt="" /><span
                   >Flowmeter</span
                 ></a
@@ -156,38 +169,170 @@
             </li>
             <li class="nav-item">
               <a href="#!" class="nav-link"
-                ><img src="assets/image/levelmeter.png" alt="" /><span
-                  >Levelmeter</span
+                ><img src="assets/image/temperature.png" alt="" /><span
+                  >Temperature</span
                 ></a
               >
             </li>
             <li class="nav-item">
               <a href="#!" class="nav-link"
-                ><img src="assets/image/levelmeter.png" alt="" /><span
-                  >Levelmeter</span
+                ><img src="assets/image/valve.png" alt="" /><span
+                  >Valve</span
                 ></a
               >
             </li>
             <li class="nav-item">
               <a href="#!" class="nav-link"
-                ><img src="assets/image/levelmeter.png" alt="" /><span
-                  >Levelmeter</span
+                ><img src="assets/image/PH.png" alt="" /><span
+                  >Liquid Analysis</span
                 ></a
               >
             </li>
             <li class="nav-item">
               <a href="#!" class="nav-link"
-                ><img src="assets/image/levelmeter.png" alt="" /><span
-                  >Levelmeter</span
+                ><img src="assets/image/Sparing.png" alt="" /><span
+                  >Sparing KLHK</span
                 ></a
               >
             </li>
           </ul>
+          <button
+            type="button"
+            class="nav-service-btn nav-service-next"
+            aria-label="Scroll right"
+          >
+            <i class="ri-arrow-right-s-line"></i>
+          </button>
         </div>
+
+        <!-- end nav service -->
+        <h1 class="text-center mt-5 pt-2 pt-md-5">
+          Installed right. Set precisely. Commissioned with confidence.
+        </h1>
+        <p class="text-center">
+          Flowmeters. Level meters. Pressure instruments. From the first
+          connection to the final check, we install, set, and commission your
+          instruments so they perform accurately from day one, and keep your
+          operation running as planned.
+        </p>
       </section>
       <!-- end hero section -->
+
+      <!-- flowmeter section -->
+      <section class="bukti container-fluid">
+        <div class="container">
+          <h1>Flowmeter</h1>
+          <a href="#!" class="btn btn-light rounded rounded-pill">See More</a>
+        </div>
+      </section>
+      <!-- end flowmeter section -->
+      <section class="pt-3">
+        <div class="work-slider" data-speed="40">
+          <div class="work-slider-track">
+            <figure class="work-card">
+              <img
+                src="assets/image/Calibration_Flow.jpg"
+                alt="Flowmeter calibration"
+              />
+              <figcaption>
+                <h3>Flowmeter Calibration</h3>
+                <p><i class="ri-map-pin-line"></i>Plant Name, City</p>
+              </figcaption>
+            </figure>
+
+            <figure class="work-card">
+              <img src="assets/image/lab6.jpg" alt="Flowmeter calibration" />
+              <figcaption>
+                <h3>Flowmeter Calibration</h3>
+                <p><i class="ri-map-pin-line"></i>Plant Name, City</p>
+              </figcaption>
+            </figure>
+
+            <figure class="work-card">
+              <img
+                src="assets/image/bg-experience-1.jpg"
+                alt="Flowmeter calibration"
+              />
+              <figcaption>
+                <h3>Flowmeter Calibration</h3>
+                <p><i class="ri-map-pin-line"></i>Plant Name, City</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- temperature section -->
+      <section class="bukti container-fluid">
+        <div class="container">
+          <h1>Temperature</h1>
+          <a href="#!" class="btn btn-light rounded rounded-pill">See More</a>
+        </div>
+      </section>
+      <!-- end flowmeter section -->
+      <section class="pt-3">
+        <div class="work-slider work-slider-2" data-speed="40">
+          <div class="work-slider-track">
+            <figure class="work-card">
+              <img
+                src="assets/image/Calibration_Flow.jpg"
+                alt="Flowmeter calibration"
+              />
+              <figcaption>
+                <h3>Temperature Calibration</h3>
+                <p><i class="ri-map-pin-line"></i>Plant Name, City</p>
+              </figcaption>
+            </figure>
+
+            <figure class="work-card">
+              <img src="assets/image/lab6.jpg" alt="Temperature calibration" />
+              <figcaption>
+                <h3>Temperature Calibration</h3>
+                <p><i class="ri-map-pin-line"></i>Plant Name, City</p>
+              </figcaption>
+            </figure>
+
+            <figure class="work-card">
+              <img
+                src="assets/image/bg-experience-1.jpg"
+                alt="Temperature calibration"
+              />
+              <figcaption>
+                <h3>Temperature Calibration</h3>
+                <p><i class="ri-map-pin-line"></i>Plant Name, City</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- end main -->
+
+    <!-- modal -->
+    <div
+      class="modal fade"
+      id="modalFlowmeter"
+      tabindex="-1"
+      aria-labelledby="modalFlowmeterLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn ms-auto"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="ri-close-line"></i>
+            </button>
+          </div>
+          <div class="modal-body"></div>
+        </div>
+      </div>
+    </div>
+    <!-- end modal -->
 
     <!-- footer -->
     <footer class="footer">
