@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About Us | Hervitama Indonesia</title>
+    <title>Installation, Setting & commisioning | Hervitama Indonesia</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -310,7 +310,7 @@
 
     <!-- modal -->
     <div
-      class="modal fade"
+      class="modal fade spec-modal"
       id="modalFlowmeter"
       tabindex="-1"
       aria-labelledby="modalFlowmeterLabel"
@@ -319,6 +319,11 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
+            <img
+              src="assets/image/banner_flowmeter.png"
+              class="spec-banner"
+              alt=""
+            />
             <button
               type="button"
               class="btn ms-auto"
@@ -328,7 +333,55 @@
               <i class="ri-close-line"></i>
             </button>
           </div>
-          <div class="modal-body"></div>
+
+          <div class="modal-body">
+            <h2 class="spec-title" id="modalFlowmeterLabel">Flowmeter</h2>
+            <p class="spec-about">
+              A flowmeter measures how much liquid, gas, or steam passes through
+              a pipe. The right type depends on the fluid and the process, and
+              correct installation and setting is what keeps the readings
+              accurate.
+            </p>
+
+            <div class="spec-grid">
+              <article class="spec-card">
+                <h4>Magnetic</h4>
+                <p>
+                  Measures conductive liquids using electromagnetic induction.
+                  No moving parts, well suited to water, wastewater, and
+                  slurries.
+                </p>
+                <span class="spec-tag">Faraday's law</span>
+              </article>
+
+              <article class="spec-card">
+                <h4>Ultrasonic</h4>
+                <p>
+                  Uses ultrasonic signals to measure flow velocity, with options
+                  that attach outside the pipe without interrupting the process.
+                </p>
+                <span class="spec-tag">Transit-time / Doppler</span>
+              </article>
+
+              <article class="spec-card">
+                <h4>Coriolis</h4>
+                <p>
+                  Measures mass flow directly through vibrating tubes, and can
+                  also report density. Used where high accuracy matters.
+                </p>
+                <span class="spec-tag">Coriolis effect</span>
+              </article>
+
+              <article class="spec-card">
+                <h4>Vortex</h4>
+                <p>
+                  Measures flow from the vortices shed behind a bluff body.
+                  Commonly used for steam, gases, and liquids.
+                </p>
+                <span class="spec-tag">Vortex shedding</span>
+              </article>
+            </div>
+          </div>
         </div>
       </div>
     </div>
