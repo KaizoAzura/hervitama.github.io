@@ -83,7 +83,7 @@
                         >
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#"
+                        <a class="dropdown-item" href="calibration.html"
                           >Calibration Services</a
                         >
                       </li>
@@ -154,42 +154,72 @@
               >
             </li>
             <li class="nav-item">
-              <a href="#!" class="nav-link"
+              <a
+                href="#!"
+                class="nav-link"
+                data-bs-toggle="modal"
+                data-bs-target="#modalLevelmeter"
+                aria-label="Read more about Levelmeter"
                 ><img src="assets/image/levelmeter.png" alt="" /><span
                   >Levelmeter</span
                 ></a
               >
             </li>
             <li class="nav-item">
-              <a href="#!" class="nav-link"
+              <a
+                href="#!"
+                class="nav-link"
+                data-bs-toggle="modal"
+                data-bs-target="#modalPressure"
+                aria-label="Read more about Pressure"
                 ><img src="assets/image/pressure.png" alt="" /><span
                   >Pressure</span
                 ></a
               >
             </li>
             <li class="nav-item">
-              <a href="#!" class="nav-link"
+              <a
+                href="#!"
+                class="nav-link"
+                data-bs-toggle="modal"
+                data-bs-target="#modalTemperature"
+                aria-label="Read more about Temperature"
                 ><img src="assets/image/temperature.png" alt="" /><span
                   >Temperature</span
                 ></a
               >
             </li>
             <li class="nav-item">
-              <a href="#!" class="nav-link"
+              <a
+                href="#!"
+                class="nav-link"
+                data-bs-toggle="modal"
+                data-bs-target="#modalValve"
+                aria-label="Read more about Valve"
                 ><img src="assets/image/valve.png" alt="" /><span
                   >Valve</span
                 ></a
               >
             </li>
             <li class="nav-item">
-              <a href="#!" class="nav-link"
+              <a
+                href="#!"
+                class="nav-link"
+                data-bs-toggle="modal"
+                data-bs-target="#modalLiquidAnalysis"
+                aria-label="Read more about Liquid Analysis"
                 ><img src="assets/image/PH.png" alt="" /><span
                   >Liquid Analysis</span
                 ></a
               >
             </li>
             <li class="nav-item">
-              <a href="#!" class="nav-link"
+              <a
+                href="#!"
+                class="nav-link"
+                data-bs-toggle="modal"
+                data-bs-target="#modalKLHK"
+                aria-label="Read more about KLHK"
                 ><img src="assets/image/Sparing.png" alt="" /><span
                   >Sparing KLHK</span
                 ></a
@@ -309,6 +339,7 @@
     <!-- end main -->
 
     <!-- modal -->
+    <!-- modal flowmeter -->
     <div
       class="modal fade spec-modal"
       id="modalFlowmeter"
@@ -385,6 +416,500 @@
         </div>
       </div>
     </div>
+    <!-- end modal flowmeter -->
+    <!-- modal levelmeter -->
+    <div
+      class="modal fade spec-modal"
+      id="modalLevelmeter"
+      tabindex="-1"
+      aria-labelledby="modalLevelmeterLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img
+              src="assets/image/banner_levelmeter.png"
+              class="spec-banner"
+              alt=""
+            />
+            <button
+              type="button"
+              class="btn ms-auto"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="ri-close-line"></i>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <h2 class="spec-title" id="modalFlowmeterLabel">Level Meter</h2>
+            <p class="spec-about">
+              A level meter measures the level of liquids or solids in tanks and
+              process vessels. The appropriate technology depends on the
+              material, operating conditions, and required measurement accuracy.
+            </p>
+
+            <div class="spec-grid">
+              <article class="spec-card">
+                <h4>Radar</h4>
+                <p>
+                  Uses microwave signals to measure level without direct contact
+                  with the material. Suitable for liquids and solids in
+                  demanding process conditions. Converts temperature sensor
+                  signals into standardized electrical outputs for monitoring
+                  and process control systems.
+                </p>
+                <span class="spec-tag">Microwave Radar</span>
+              </article>
+
+              <article class="spec-card">
+                <h4>Ultrasonic</h4>
+                <p>
+                  Measures level using reflected sound waves. Commonly used for
+                  liquid storage tanks and applications where non-contact
+                  measurement is preferred.
+                </p>
+                <span class="spec-tag">Ultrasonic Echo</span>
+              </article>
+
+              <article class="spec-card">
+                <h4>Differential Pressure (DP)</h4>
+                <p>
+                  Determines liquid level from the pressure difference caused by
+                  the liquid column. Widely used in industrial tanks and process
+                  vessels.
+                </p>
+                <span class="spec-tag">Hydrostatic Pressure</span>
+              </article>
+              <article class="spec-card">
+                <h4>Resistance</h4>
+                <p>
+                  Detects liquid level through changes in electrical resistance.
+                  Suitable for applications using conductive probes or resistive
+                  level-sensing elements.
+                </p>
+                <span class="spec-tag">Electrical Resistance</span>
+              </article>
+              <article class="spec-card">
+                <h4>Capacitance</h4>
+                <p>
+                  Measures level through changes in electrical capacitance as
+                  the material level changes. Can be used for liquids and
+                  certain solid materials.
+                </p>
+                <span class="spec-tag">Capacitance Principle</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end modal levelmeter -->
+    <!-- modal pressure -->
+    <div
+      class="modal fade spec-modal"
+      id="modalPressure"
+      tabindex="-1"
+      aria-labelledby="modalPressureLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img
+              src="assets/image/banner_pressure.png"
+              class="spec-banner"
+              alt=""
+            />
+            <button
+              type="button"
+              class="btn ms-auto"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="ri-close-line"></i>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <h2 class="spec-title" id="modalPressureLabel">Pressure</h2>
+            <p class="spec-about">
+              Pressure instruments monitor and control pressure in industrial
+              processes to help maintain safe operating conditions and reliable
+              system performance. The right instrument depends on the required
+              measurement range, accuracy, and control function.
+            </p>
+
+            <div class="spec-grid">
+              <article class="spec-card">
+                <h4>Pressure Transmitter</h4>
+                <p>
+                  Converts pressure measurements into standardized electrical
+                  signals for monitoring, recording, and process control
+                  systems.
+                </p>
+                <span class="spec-tag">Pressure Measurement</span>
+              </article>
+
+              <article class="spec-card">
+                <h4>Pressure Switch</h4>
+                <p>
+                  Activates or deactivates an electrical circuit when pressure
+                  reaches a predefined setpoint. Commonly used for alarms and
+                  automatic control.
+                </p>
+                <span class="spec-tag">Setpoint Switching</span>
+              </article>
+
+              <article class="spec-card">
+                <h4>Pressure Gauge</h4>
+                <p>
+                  Displays pressure directly through a mechanical or digital
+                  indicator. Commonly used for local pressure monitoring in
+                  pipes, tanks, and industrial equipment.
+                </p>
+                <span class="spec-tag">Mechanical / Digital</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end modal pressure -->
+
+    <!-- modal temperature -->
+    <div
+      class="modal fade spec-modal"
+      id="modalTemperature"
+      tabindex="-1"
+      aria-labelledby="modalTemperatureLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img
+              src="assets/image/banner_temperature.png"
+              class="spec-banner"
+              alt=""
+            />
+            <button
+              type="button"
+              class="btn ms-auto"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="ri-close-line"></i>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <h2 class="spec-title" id="modalFlowmeterLabel">Temperature</h2>
+            <p class="spec-about">
+              Temperature instruments measure and monitor thermal conditions in
+              industrial processes. They help maintain product quality, process
+              stability, and equipment safety through accurate temperature
+              measurement and control.
+            </p>
+
+            <div class="spec-grid">
+              <article class="spec-card">
+                <h4>Temperature Transmitter</h4>
+                <p>
+                  Converts temperature sensor signals into standardized
+                  electrical outputs for monitoring and process control systems.
+                </p>
+                <span class="spec-tag">Signal Conversion</span>
+              </article>
+
+              <article class="spec-card">
+                <h4>Temperature Element</h4>
+                <p>
+                  Detects temperature changes using sensing technologies such as
+                  RTDs and thermocouples. Suitable for measuring temperature
+                  across a wide range of industrial applications.
+                </p>
+                <span class="spec-tag">RTD / Thermocouple</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end modal temperature -->
+    <!-- modal valve -->
+    <div
+      class="modal fade spec-modal"
+      id="modalValve"
+      tabindex="-1"
+      aria-labelledby="modalValveLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img
+              src="assets/image/banner_valve.png"
+              class="spec-banner"
+              alt=""
+            />
+            <button
+              type="button"
+              class="btn ms-auto"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="ri-close-line"></i>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <h2 class="spec-title" id="modalValveLabel">Valve</h2>
+            <p class="spec-about">
+              Industrial valves regulate, control, or isolate the flow of
+              liquids, gases, and steam within process systems. The appropriate
+              valve depends on the application, operating conditions, and
+              required flow-control performance.
+            </p>
+
+            <div class="spec-grid">
+              <article class="spec-card">
+                <h4>Control Valve</h4>
+                <p>
+                  Automatically regulates flow, pressure, or temperature based
+                  on signals from a control system to maintain the desired
+                  process conditions.
+                </p>
+                <span class="spec-tag">Flow Regulation</span>
+              </article>
+
+              <article class="spec-card">
+                <h4>Isolation Valve</h4>
+                <p>
+                  Opens or closes a process line to control fluid passage and
+                  isolate equipment for maintenance or operational requirements.
+                </p>
+                <span class="spec-tag">On / Off Control</span>
+              </article>
+
+              <article class="spec-card">
+                <h4>Actuated Valve</h4>
+                <p>
+                  Uses pneumatic, electric, or hydraulic actuation to operate
+                  valves remotely or automatically within industrial processes.
+                </p>
+                <span class="spec-tag">Pneumatic / Electric / Hydraulic</span>
+              </article>
+
+              <article class="spec-card">
+                <h4>Safety Valve</h4>
+                <p>
+                  Releases excess pressure when it exceeds a predetermined
+                  limit, helping protect equipment and process systems from
+                  overpressure conditions.
+                </p>
+                <span class="spec-tag">Overpressure Protection</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end modal valve -->
+
+    <!-- modal liquid analysis -->
+    <div
+      class="modal fade spec-modal"
+      id="modalLiquidAnalysis"
+      tabindex="-1"
+      aria-labelledby="modalLiquidAnalysisLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img
+              src="assets/image/banner_liquid analysis.png"
+              class="spec-banner"
+              alt=""
+            />
+            <button
+              type="button"
+              class="btn ms-auto"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="ri-close-line"></i>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <h2 class="spec-title" id="modalLiquidAnalysisLabel">
+              Liquid Analysis
+            </h2>
+            <p class="spec-about">
+              Liquid analysis instruments measure chemical and physical
+              parameters to assess water quality and monitor industrial or
+              environmental processes. These measurements support process
+              optimization, water treatment, and environmental monitoring.
+            </p>
+
+            <div class="spec-grid">
+              <article class="spec-card">
+                <h4>pH</h4>
+                <p>
+                  Measures the acidity or alkalinity of a liquid to support
+                  water treatment, chemical processing, and quality control.
+                </p>
+                <span class="spec-tag">Acidity / Alkalinity</span>
+              </article>
+
+              <article class="spec-card">
+                <h4>COD</h4>
+                <p>
+                  Measures chemical oxygen demand, indicating the amount of
+                  oxygen required to chemically oxidize substances in a water
+                  sample.
+                </p>
+                <span class="spec-tag">Chemical Oxygen Demand</span>
+              </article>
+
+              <article class="spec-card">
+                <h4>Ammonia</h4>
+                <p>
+                  Measures ammonia concentration in water to help monitor
+                  wastewater treatment performance and evaluate water quality.
+                </p>
+                <span class="spec-tag">NH₃ / NH₄⁺</span>
+              </article>
+
+              <article class="spec-card">
+                <h4>Turbidity</h4>
+                <p>
+                  Measures water cloudiness caused by suspended particles.
+                  Commonly used in drinking water treatment and environmental
+                  monitoring.
+                </p>
+                <span class="spec-tag">Light Scattering</span>
+              </article>
+
+              <article class="spec-card">
+                <h4>Dissolved Oxygen (DO)</h4>
+                <p>
+                  Measures the concentration of oxygen dissolved in water, an
+                  important parameter for biological treatment and aquatic
+                  environments.
+                </p>
+                <span class="spec-tag">Oxygen Concentration</span>
+              </article>
+
+              <article class="spec-card">
+                <h4>Chlorine</h4>
+                <p>
+                  Measures residual chlorine concentration to monitor
+                  disinfection effectiveness in water treatment and distribution
+                  systems.
+                </p>
+                <span class="spec-tag">Residual Chlorine</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end modal liquid analysis -->
+
+    <!-- modal KLHK -->
+    <div
+      class="modal fade spec-modal"
+      id="modalKLHK"
+      tabindex="-1"
+      aria-labelledby="modalKLHKLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img
+              src="assets/image/banner_klhk.png"
+              class="spec-banner"
+              alt=""
+            />
+            <button
+              type="button"
+              class="btn ms-auto"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="ri-close-line"></i>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <h2 class="spec-title" id="modalKLHKLabel">Sparing KLHK</h2>
+            <p class="spec-about">
+              SPARING (Sistem Pemantauan Kualitas Air Limbah secara
+              Terus-Menerus dan Dalam Jaringan) is a continuous wastewater
+              quality monitoring system that records and transmits measurement
+              data to support environmental monitoring and regulatory
+              compliance.
+            </p>
+
+            <div class="spec-grid">
+              <article class="spec-card">
+                <h4>pH Monitoring</h4>
+                <p>
+                  Measures wastewater acidity or alkalinity to monitor process
+                  conditions and support compliance with applicable discharge
+                  requirements.
+                </p>
+                <span class="spec-tag">pH Measurement</span>
+              </article>
+
+              <article class="spec-card">
+                <h4>COD Monitoring</h4>
+                <p>
+                  Monitors chemical oxygen demand to assess the organic
+                  pollution load in wastewater treatment processes.
+                </p>
+                <span class="spec-tag">Chemical Oxygen Demand</span>
+              </article>
+
+              <article class="spec-card">
+                <h4>TSS Monitoring</h4>
+                <p>
+                  Measures total suspended solids to evaluate the concentration
+                  of suspended particles in wastewater.
+                </p>
+                <span class="spec-tag">Total Suspended Solids</span>
+              </article>
+
+              <article class="spec-card">
+                <h4>Flow Monitoring</h4>
+                <p>
+                  Measures wastewater flow rate to support discharge monitoring,
+                  process evaluation, and wastewater management.
+                </p>
+                <span class="spec-tag">Wastewater Flow Rate</span>
+              </article>
+
+              <article class="spec-card">
+                <h4>Data Acquisition System</h4>
+                <p>
+                  Collects, processes, and transmits monitoring data to support
+                  continuous observation, reporting, and environmental
+                  compliance.
+                </p>
+                <span class="spec-tag">Real-Time Data Transmission</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end modal KLHK -->
     <!-- end modal -->
 
     <!-- footer -->
